@@ -150,3 +150,9 @@ def fibo_cached(n):
     else:
         return fibo_cached(n-1) + fibo_cached(n-2)
 ```
+
+## pour vérifier
+
+vous trouverez un repo organisé comme celui qu'on vous demande de créer à cette adresse
+
+<https://github.com/ue12-p23/git-tp-add-by-lines-reference>
