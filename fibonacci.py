@@ -2,11 +2,13 @@
 la suite de fibonacci
 """
 
-def fibo(n):
-    """
-    # une implémentation naïve et inefficace
-    """
-    if n <= 1:
-        return n
-    else:
-        return fibo(n-1) + fibo(n-2)
+cache={0:0,1:1}
+
+def fibo_cached(n):
+    if n in cache:
+        return cache[n]
+    if n<0:
+        return False
+    value= fibo_cached(n-2)+fibo_cached(n-1)
+    cache[n]=value
+    return value

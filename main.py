@@ -2,10 +2,10 @@
 import sys
 
 # on importe le module de calcul
-from fibonacci import fibo
+from fibonacci import fibo_cached
 
 # acquisition du paramètre à partir de la ligne de commande
 n = int(sys.argv[1])
 
 # calcul et affichage
-print(f"fibo({n}) = {fibo(n)}")
+print(f"fibo({n}) = {fibo_cached(n)}")
